@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles_header.css" />
+
+<title>Candidature</title>
+<style>
+    h3{
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 25px;         
+  font-style: normal; 
+  font-weight: bold; 
+  color: black;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: 'Times New Roman', Times, serif; 
+  color:white; 
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:center; 
+  background-color: white; 
+  border-collapse: collapse; 
+  border: 3px solid #c0847d;
+  width: 100%;
+  
+}
+table.inner{
+  border: 0px
+}
+td{
+    color: black;
+margin-right: 30px;
+}
+
+button{
+cursor: pointer;
+border-radius: 10px;
+background-color: #c0847d;
+color: white;
+width: 110px;
+height: 30px;    
+}
+</style>
+</head>
+ 
+<div>
+    <body>
+        <nav class="navbar">
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a style="margin-right: 150px;">CDR Job Market</a></li>
+
+              <li><a href="#">Offres</a></li>
+              <li><a href="">Entretiens et échanges</a></li>
+              <li><a href="Rapport_entretien.html">Rapport d'entretien</a></li>
+              <li><a href="Candidature.html">Candidatures</a></li>
+              <li><a href="#">journal de bord</a></li>
+              <li><a href="Compte.html">Compte</a></li>
+              <li><a href="Contact.html">Nous contacter</a></li>
+  <li>            <button class="btn">Deconnexion</button>
+  </li>
+            </ul>
+          </div>
+        </nav>
+      </body>
+    <body style="background-color:white;">
+        <form action="InsertContact" method="post">
+    
+     
+    <table aligne="center" cellpadding = "12" >
+     <h3>Candidature</h3>
+    <tr>
+    <td>Nom</td>
+    <td><input type="text" name="First_Name" maxlength="30" placeholder="Nom ...."/>
+    </td>
+    </tr>
+     
+    <tr>
+    <td>Mail</td>
+    <td><input type="text" name="Last_Name" maxlength="30" placeholder="xxx@gmail.com"/>
+    </td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="number" name="Last_Name" maxlength="30" placeholder="Password..."/>
+        </td>
+        </tr>
+         
+     
+    <tr>
+        <tr>
+            <td>Domaine</td>
+            <td>
+            <input type="text" name="Domaine" maxlength="10" placeholder="Domaine...." />
+            </td>
+            </tr>
+            <tr>
+                <td>Genre</td>
+                <td>
+                Homme <input type="radio" name="Gender" value="Male" />
+                Femme <input type="radio" name="Gender" value="Female" />
+                </td>
+                </tr>
+                <tr>
+                    <td>Type de contrat</td>
+                    <td>
+                    CDI <input type="radio" name="cdi" value="cdi" />
+                    CDD <input type="radio" name="cdd" value="cdd" />
+                    Stage <input type="radio" name="stage" value="stage" />
+                    Alternace <input type="radio" name="alternace" value="alternace" />
+
+                    </td>
+                    </tr>
+<tr>
+<td>Compétances <br /><br /><br /></td>
+<td><textarea name="Competances" rows="3" cols="30" placeholder="c++ Javascript ....."></textarea></td>
+</tr>
+<tr>
+  <td>Ville Possible</td>
+ <td>
+<input type="text" name="ville" maxlength="10" placeholder="ville..." />
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Telephone</td>
+                                <td><input type="number" name="Telephone" maxlength="30" placeholder="Telephone..."/>
+                                </td>
+                                </tr>
+    <td>Pays</td>
+     
+    <td>
+    
+     
+    <select id="Pays" name="Pays">
+    <option value="-1">France:</option>
+    <option value="January">Allemend</option>
+    <option value="February">Italy</option>
+    <option value="March">Poland</option>
+    
+    </select>
+     
+    
+    </td>
+    </tr> 
+    <tr>
+    <td>Nombre d'experience à mettre</td>
+    <td><input type="text" name="Experience" maxlength="30" placeholder="Nombre d'experience" />
+        <button>Valider</button>
+    </td>
+    </tr>
+    <td>Nombre de diplome à mettre</td>
+    <td><input type="text" name="Diplome" maxlength="30" placeholder="Nombre de Diplome" />
+        <button>Valider</button>
+    </td>
+    </tr>
+     
+    <tr>
+    <td colspan="2" aligne="center">  
+<button>Enregistrer</button>
+    </td>
+    </tr>
+    <tr>
+    <td>   
+         <h3>Formations</h3>
+    </td>
+    </tr>
+     
+    <tr>
+    <td>Non Structure</td>
+    <td><input type="text" name="Etablissmenet"  placeholder="Etablissement" /></td>
+    </tr>
+    <tr>
+        <td>Diplome</td>
+        <td><input type="text" name="Diplome"   placeholder="Diplome" /></td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td><input type="date" name="date"  /> - <input type="date"></td>
+    </tr>
+    <tr>
+        <td>Description <br /><br /><br /></td>
+        <td><textarea name="Description" rows="3" cols="30" placeholder="Description....."></textarea></td>
+        </tr>
+     
+   
+     
+   
+    <td colspan="2" aligne="center">
+        <button>Mettre à Jour</button>
+    </td>
+    </tr>
+    </table>
+     
+    </form>
+    
+    </body>
+</div>
+
+</html

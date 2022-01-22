@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles_header.css" />
+
+<title>Candidature</title>
+<style>
+    h3{
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 25px;         
+  font-style: normal; 
+  font-weight: bold; 
+  color: black;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: 'Times New Roman', Times, serif; 
+  color:white; 
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:center; 
+  background-color: white; 
+  border-collapse: collapse; 
+  width: 60%;
+  
+}
+table.inner{
+  border: 0px
+}
+td{
+    color: black;
+margin-right: 30px;
+}
+
+button{
+cursor: pointer;
+border-radius: 10px;
+background-color: #c0847d;
+color: white;
+width: 110px;
+height: 30px;    
+}
+</style>
+</head>
+ 
+<div>
+    <body>
+        <nav class="navbar">
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a style="margin-right: 150px;">CDR Job Market</a></li>
+
+              <li><a href="Offres.html">Offres</a></li>
+              <li><a href="">Entretiens et échanges</a></li>
+              <li><a href="Rapport_entretien.html">Rapport d'entretien</a></li>
+              <li><a href="Candidature.html">Candidatures</a></li>
+              <li><a href="journal_de_bord.html">journal de bord</a></li>
+              <li><a href="Compte.html">Compte</a></li>
+              <li><a href="Contact.html">Nous contacter</a></li>
+  <li>            <button class="btn">Deconnexion</button>
+  </li>
+            </ul>
+          </div>
+        </nav>
+      </body>
+    <body style="background-color:white;">
+        <form action="InsertContact" method="post">
+    
+     
+    <table aligne="center" cellpadding = "12" >
+    
+        <tr>
+            <td>Nombre de page: </td>
+            <td>
+                <input  style="width: 30px;" type="number" name="a" value="1"/>
+            </td>
+            <td>Nombre d'offres: </td>
+            <td>
+                <input style="width: 30px;" type="number" name="a" value="1"/>
+    
+                </td>
+            <td>
+            </td>
+            </tr>
+    <tr>
+    <td>Max de rapport à afficher par page</td>
+    <td>   
+        <select id="1" name="1">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+       </select>
+       <button>Changer</button>
+       </td>
+    </tr>
+    
+  
+         
+    <tr>
+        <td>Rapport d'entretien de l'organisation XXXX le 21/5/2021 - 15:23:40 </td>
+        <td>
+            <button>Voir</button>
+        </td>
+     
+        <td>
+        </td>
+        </tr>
+    </form>
+    
+    </body>
+</div>
+
+</html

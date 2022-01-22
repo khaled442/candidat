@@ -1,0 +1,22 @@
+#nom_entreprise
+{
+    text-align: center;
+}
+
+
+#Menu
+{
+    
+    border: 2px black solid;
+    display: flex;/* aligner les élements */
+    justify-content: space-around; /* espacer les élements entre eux*/
+
+}
+
+
+
+
+.c_menu
+{
+    font-size: x-large;
+}
